@@ -1,0 +1,103 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    margin: 2px;
+    border: 2px solid black;
+    width: 1000px;
+}
+
+.btn {
+    margin: 2px;
+    border: 2px solid black;
+}
+
+.tab {
+    margin: 2px;
+    border: 2px solid black;
+}
+
+.camp {
+    margin: 2px;
+    border: 2px solid black;
+    height: 500px;
+    width: 300px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.tab {
+    height: 500px;
+    width: 700px;
+    align-items: center;
+}
+.container
+{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.btn
+{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.c
+{
+    margin: 2px 2px;
+    border: 1px solid black;
+    /* align-items: center; */
+    text-align: center;
+    padding: 3px;
+    width:30px;
+}
+
+.b
+{
+    margin: 2px 2px;
+    border: 1px solid black;
+    padding: 3px;
+    width: auto;
+}
+
+@media (max-width:360px)
+{
+    .container
+    {
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 360px;
+    }
+    .btn
+    {
+        /* align-self:baseline; */
+        order: 4;
+        display: flex;
+        flex-direction: row;
+        width: 355px;
+        justify-content: space-evenly;
+    }
+    .camp
+    {
+        /* align-self: baseline; */
+        order: 2;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .tab
+    {
+        width:290px;
+        order: 1;
+    }
+}
